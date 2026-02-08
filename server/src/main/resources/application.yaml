@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: backendtemplate
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: test
+    password: test
+    url: jdbc:postgresql://localhost:65432/backendtemplate
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
