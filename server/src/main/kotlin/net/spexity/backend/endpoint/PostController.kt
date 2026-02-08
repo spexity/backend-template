@@ -4,6 +4,7 @@ import jakarta.validation.Valid
 import jakarta.validation.constraints.NotBlank
 import net.spexity.backend.service.CreatePostRequest
 import net.spexity.backend.service.PostService
+import net.spexity.common.validation.ValidHexColor
 import net.spexity.spec.Post
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -36,6 +37,7 @@ class PostController(
 
     data class CreatePostRestRequest(
         @field:NotBlank val body: String,
+        @field:ValidHexColor val color: String,
     )
 
     data class CreatePostRestResponse(

@@ -20,7 +20,6 @@ dependencies {
 	implementation(libs.flyway.database.postgresql)
 	implementation(libs.jackson.module.kotlin)
 	implementation(libs.jackson.dataformat.xml)
-	implementation(libs.maven.artifacts)
 	developmentOnly(libs.spring.boot.devtools)
 	runtimeOnly(libs.postgresql)
 	testImplementation(libs.spring.boot.starter.test)
